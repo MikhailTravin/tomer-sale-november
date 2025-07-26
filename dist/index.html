@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241120024712">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__main-home main-home">
+				<picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.png" alt="" class="main-home__bg"></picture>
+				<picture><source srcset="img/bg-mob.webp" type="image/webp"><img src="img/bg-mob.png" alt="" class="main-home__bg-mob"></picture>
+				<div class="main-home__container">
+					<div class="main-home__content">
+						<div class="main-home__sale">Акция</div>
+						<div class="main-home__data">22-30 ноября</div>
+					</div>
+					<picture><source srcset="img/image.webp" type="image/webp"><img src="img/image.png" alt="" class="main-home__image"></picture>
+				</div>
+			</div>
+			<div class="page__timer timer">
+				<div class="timer__container">
+					<div class="timer__time-count">
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<div class="time-count__text">дни</div>
+							</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val ">00</div>
+								<div class="time-count__text">часы</div>
+							</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<div class="time-count__text">минуты</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__lessons lessons">
+				<div class="lessons__container">
+					<div class="lessons__title">Специальная <span>акция</span> на обучение турецкому языку</div>
+					<div class="lessons__body">
+						<div class="lessons__column">
+							<div class="lessons__item item-lessons">
+								<div class="item-lessons__title">групповые занятия</div>
+								<div class="item-lessons__list">
+									<ul>
+										<li>24 онлайн-занятия по 90 минут</li>
+										<li>Интерактивные учебные материалы</li>
+										<li>Бесплатный доступ к онлайн-порталу</li>
+										<li>Закрытый форум для общения</li>
+									</ul>
+								</div>
+								<div class="item-lessons__images">
+									<div class="item-lessons__image">
+										<img class="item-lessons__flag-1" src="img/icons/flag-1.svg" alt="">
+										<div class="item-lessons__text text-flag-1">
+											скидка
+											<span>20%</span>
+										</div>
+									</div>
+								</div>
+								<a href="#" data-popup="#forma" class="item-lessons__button"><span>забрать скидку 20
+										%</span></a>
+							</div>
+						</div>
+						<div class="lessons__column">
+							<div class="lessons__item item-lessons">
+								<div class="item-lessons__title">индивидуальные уроки</div>
+								<div class="item-lessons__list">
+									<ul>
+										<li>Бесплатный доступ к онлайн-порталу</li>
+										<li>Любой уровень за 32 урока</li>
+										<li>Вы выбираете преподавателя</li>
+										<li>Вы выбираете время занятий</li>
+									</ul>
+								</div>
+								<div class="item-lessons__images">
+									<div class="item-lessons__image">
+										<img class="item-lessons__flag-1" src="img/icons/flag-1.svg" alt="">
+										<div class="item-lessons__text text-flag-1">
+											скидка
+											<span>20%</span>
+										</div>
+									</div>
+								</div>
+								<a href="#" data-popup="#forma" class="item-lessons__button"><span>забрать скидку 20
+										%</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<img src="img/icons/logo.svg" alt="">
+					</div>
+					<div class="footer__center">
+						г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410<br>
+						Копирование информации с сайта и ее размещение возможно только с ссылкой на данный ресурс.
+					</div>
+					<div class="footer__social">
+						<a href="#" class="footer__icon _icon-whatsapp"></a>
+						<a href="#" class="footer__icon _icon-telegram"></a>
+						<a href="#" class="footer__icon _icon-vk"></a>
+						<a href="#" class="footer__icon _icon-instagram"></a>
+						<a href="#" class="footer__icon _icon-facebook"></a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					Языковые курсы «Диалог» © 2005 - 2024
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="forma" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__body">
+					<div class="popup__sale">
+						<span>Акция до 29 ноября 23:59 МСК</span>
+					</div>
+					<div class="popup__items">
+						<div class="popup__title">ТУРЕЦКИЙ. ВСЕ ВКЛЮЧЕНО</div>
+						<div class="popup__subtitle">Специальное предложение</div>
+						<form action="#" class="popup__forms">
+							<div class="popup__inputs">
+								<div class="popup__input">
+									<label for="name">ИМЯ</label>
+									<input data-required id="name" autocomplete="off" type="text" name="form[]" placeholder="Введите ваше имя">
+								</div>
+							</div>
+							<div class="popup__inputs">
+								<div class="popup__input">
+									<label for="email">E-MAIL</label>
+									<input data-required id="email" autocomplete="off" type="text" name="form[]" placeholder="Введите ваш эл. адрес">
+								</div>
+							</div>
+							<div class="popup__inputs">
+								<div class="popup__input">
+									<label for="telephone">ТЕЛЕФОН</label>
+									<input data-required id="telephone" autocomplete="off" type="text" name="form[]" placeholder="Введите ваш телефон">
+								</div>
+							</div>
+							<div class="popup__checkboxes">
+								<div class="popup__item">
+									<div class="popup__checkbox checkbox">
+										<input data-required id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label">
+											<div class="checkbox__icon _icon-check"></div>
+											<span class="checkbox__text">Пакет участия “Premıum+”. Турецкий.
+												Все включено. Доступ навсегда.
+												(ALLIN-U-3-999-OF)</span>
+										</label>
+									</div>
+									<div class="popup__prices">
+										<div class="popup__price">
+											<div class="popup__old-price">21 000 руб.</div>
+											<span>9 900</span> руб.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__totals">
+								<div class="popup__total-title">Общая сумма: </div>
+								<div class="popup__price">
+									<div class="popup__old-price">21 000 руб.</div>
+									<span>9 900</span> руб.
+								</div>
+							</div>
+							<button type="submit" class="popup__button button">Оформить заказ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241120024712"></script>
+</body>
+
+</html>
