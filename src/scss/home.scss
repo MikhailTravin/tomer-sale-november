@@ -1,0 +1,504 @@
+.page {
+	// .page__main-home
+	&__main-home {
+		position: relative;
+		padding: 57px 0px 160px 0px;
+		@media (max-width: $mobile) {
+			padding: 10px 0px 128px 0px;
+		}
+	}
+	// .page__timer
+	&__timer {
+		position: relative;
+		padding: 65px 0px 50px 0px;
+		@media (max-width: $mobile) {
+			padding: 55px 0px 35px 0px;
+		}
+	}
+	// .page__lessons
+	&__lessons {
+		padding: 0px 0px 100px 0px;
+		@media (max-width: $mobile) {
+			padding: 0px 0px 45px 0px;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Главная
+
+.main-home {
+	// .main-home__bg
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
+	}
+	// .main-home__bg-mob
+	&__bg-mob {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: none;
+		@media (max-width: $mobileSmall) {
+			display: block;
+		}
+	}
+	// .main-home__container
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	// .main-home__image
+	&__image {
+		position: relative;
+		top: 0;
+		width: auto;
+		height: 346px;
+		object-fit: cover;
+		right: 51px;
+		z-index: 2;
+		@media (max-width: $mobile) {
+			height: 145px;
+			right: 0;
+			margin: 0px 0px 16px 0px;
+		}
+	}
+	// .main-home__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		@media (max-width: $mobile) {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	// .main-home__sale
+	&__sale {
+		padding: 4px 30px;
+		border-radius: 30px;
+		background: #fff;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 110%;
+		text-align: center;
+		color: #282828;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $mobile) {
+			border-radius: 14px;
+			font-size: 18px;
+			padding: 1px 15px;
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .main-home__data
+	&__data {
+		font-weight: 800;
+		font-size: 68px;
+		line-height: 130%;
+		text-transform: uppercase;
+		background: linear-gradient(90deg, #f5ee87 0%, #ac6f23 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@media (max-width: $mobile) {
+			font-size: 38px;
+			text-align: center;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Таймер
+
+.timer {
+	position: relative;
+	// .timer__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+	}
+	// .timer__time-count
+	&__time-count {
+	}
+}
+
+.time-count {
+	// .time-count__content
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	// .time-count__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin: 0px 10px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 6px 0px 0px;
+		}
+	}
+	// .time-count__val
+	&__val {
+		display: flex;
+		z-index: 5;
+		div {
+			background: #030303;
+			margin: 0px 3px;
+			height: 125px;
+			width: 74px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+		}
+		span {
+			font-family: $fontFamilyBebas;
+			font-weight: 400;
+			font-size: 90px;
+			line-height: math.div(135, 90);
+			display: flex;
+			background: linear-gradient(90deg, #f5ee87 0%, #ac6f23 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			padding: 10px 0px 0px 0px;
+			z-index: 2;
+		}
+		@media (max-width: $mobile) {
+			div {
+				width: 46px;
+				height: 77px;
+				margin: 0px 2px;
+			}
+			span {
+				font-size: 55px;
+				line-height: 150%;
+			}
+		}
+	}
+	// .time-count__text
+	&__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 160%;
+		letter-spacing: 0.01em;
+		text-align: center;
+		position: relative;
+		z-index: 5;
+		margin: 15px 0px 0px 0px;
+		@media (max-width: $mobile) {
+			font-size: 12px;
+			margin: 10px 0px 0px 0px;
+		}
+	}
+	// .time-count__days
+	&__days {
+	}
+	// .time-count__hours
+	&__hours {
+	}
+	// .time-count__minutes
+	&__minutes {
+	}
+}
+
+//========================================================================================================================================================
+
+//Уроки
+
+.lessons {
+	// .lessons__container
+	&__container {
+	}
+	// .lessons__title
+	&__title {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 160%;
+		margin: 0px 0px 80px 0px;
+		text-align: center;
+		span {
+			color: #b50c13;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 40px 0px;
+			font-size: 20px;
+			line-height: 140%;
+		}
+	}
+	// .lessons__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0px 72px;
+		margin: -32px;
+		@media (max-width: $pc) {
+			padding: 0px 0px 0px 0px;
+			margin: -28px -20px;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			margin: -28px 0px;
+			align-items: center;
+		}
+	}
+	// .lessons__column
+	&__column {
+		flex: 0 1 50%;
+		padding: 32px;
+		@media (max-width: $pc) {
+			padding: 28px 20px;
+		}
+		@media (max-width: $tablet) {
+			padding: 28px 0px;
+			flex: 1 1 auto;
+			width: 100%;
+		}
+	}
+	// .lessons__item
+	&__item {
+		border: 2px solid rgba(55, 55, 55, 0.8);
+		border-radius: 10px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		background: #fff;
+		padding: 0px 30px 30px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		@media (max-width: $mobile) {
+			padding: 0px 20px 20px 20px;
+		}
+	}
+}
+
+.item-lessons {
+	// .item-lessons__title
+	&__title {
+		font-weight: 600;
+		font-size: 23px;
+		line-height: 150%;
+		text-transform: uppercase;
+		text-align: center;
+		color: #000;
+		border-radius: 10px;
+		background: linear-gradient(90deg, #f5ee87 0%, #ac6f23 100%);
+		padding: 15px;
+		margin: -30px 0px 0px 0px;
+		min-width: 365px;
+		@media (max-width: $mobile) {
+			font-size: 16px;
+			margin: -20px 0px 0px 0px;
+			padding: 10px;
+			min-width: 256px;
+		}
+	}
+	// .item-lessons__list
+	&__list {
+		padding: 30px 0px 46px 0px;
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: -4px 0px;
+			@media (max-width: $mobile) {
+				margin: -3px 0px;
+			}
+			li {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 150%;
+				text-align: center;
+				padding: 4px 0px;
+				display: flex;
+				justify-content: center;
+				&::before {
+					content: "";
+					display: flex;
+					width: 3px;
+					height: 3px;
+					padding: 1.5px;
+					border-radius: 50%;
+					background-color: $mainColor;
+					margin: 12px 10px 0px 0px;
+				}
+				@media (max-width: $mobile) {
+					padding: 3px 0px;
+					font-size: 12px;
+					&::before {
+						content: "";
+						width: 2px;
+						height: 2px;
+						padding: 1px;
+						margin: 8px 8px 0px 0px;
+					}
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			padding: 18px 0px 32px 0px;
+		}
+	}
+	// .item-lessons__images
+	&__images {
+		flex: 1 1 auto;
+		margin: 0px 0px 45px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 27px 0px;
+		}
+	}
+	// .item-lessons__image
+	&__image {
+		position: relative;
+	}
+	// .item-lessons__flag-1
+	&__flag-1 {
+		height: 220px;
+		@media (max-width: $mobile) {
+			height: 154px;
+		}
+	}
+	// .item-lessons__flag-2
+	&__flag-2 {
+		height: 59px;
+		@media (max-width: $mobile) {
+			height: 41px;
+		}
+	}
+	// .item-lessons__text
+	&__text {
+		padding: 7px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+		background: linear-gradient(90deg, #f5ee87 0%, #ac6f23 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		span {
+			display: flex;
+			font-size: 50px;
+			margin: 16px 0px 0px 0px;
+			font-weight: 800;
+		}
+		@media (max-width: $mobile) {
+			font-size: 21px;
+			span {
+				font-size: 35px;
+				margin: 10px 0px 0px 0px;
+			}
+		}
+	}
+	// .item-lessons__button
+	&__button {
+		position: relative;
+		border-radius: 7px;
+		background: linear-gradient(90deg, #b50c13 0%, #963034 100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 15px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		text-transform: uppercase;
+		color: #fff;
+		span {
+			position: relative;
+			z-index: 5;
+		}
+		&::before {
+			content: "";
+			border-radius: 7px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: #b50c13 0%;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			&::before {
+				content: "";
+				opacity: 1;
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: 12px;
+			padding: 7px 9px;
+		}
+	}
+	// .item-lessons__presents
+	&__presents {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 36px 0px 0px 0px;
+		@media (max-width: $mobile) {
+			margin: 25px 0px 0px 0px;
+		}
+	}
+	// .item-lessons__present
+	&__present {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 180%;
+		text-align: center;
+		color: #000;
+		span {
+			color: #b50c13;
+		}
+		@media (max-width: $mobile) {
+			font-size: 12px;
+		}
+	}
+}
+
+.text-flag-1 {
+	margin: -15px 0px 0px 0px;
+	font-weight: 800;
+}

@@ -1,0 +1,46 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	font-family: "Montserrat", sans-serif;
+	display: inline-flex;
+	padding: 15px 30px;
+	background: linear-gradient(180deg, #ff1e1e 0%, #e00909 100%);
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: math.div(26, 16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #ffffff;
+	transition: all 0.3s ease 0s;
+	position: relative;
+	span {
+		position: relative;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		opacity: 0;
+		transition: opacity 0.3s ease 0s;
+		background: linear-gradient(180deg, #ff3d00 100%, #aa0000 0%);
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			&::before {
+				content: "";
+				opacity: 1;
+			}
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
